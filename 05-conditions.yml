@@ -1,0 +1,8 @@
+- name: Demo on conditions
+  hosts: all
+  tasks:
+    - name: String Check
+      debug:
+        msg: Hello CentOS
+      when: ansible_distribution == "CentOS"
+
