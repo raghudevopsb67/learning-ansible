@@ -2,6 +2,7 @@
   hosts: localhost
   vars:
     a: 0
+    bool_val: true
   tasks:
     - name: String Check
       debug:
@@ -12,3 +13,9 @@
       debug:
         msg: "{{a}} is gt 1"
       when: a > 1
+
+    - name: Run if bool_val is true
+      debug:
+        msg: Yes True
+      when: boo_val | bool
+
