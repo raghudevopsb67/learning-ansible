@@ -17,5 +17,5 @@
     - name: Run if bool_val is true
       debug:
         msg: Yes True
-      when: boo_val | bool
+      when: bool_val | bool
 
